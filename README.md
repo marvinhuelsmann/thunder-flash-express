@@ -4,7 +4,7 @@ Simple Express backend to store and retrieve location entries with a Base64 imag
 
 ## How to start the server localhost?
 
-Run `npm start` or you can use `https://thunder-flash-express.vercel.app'`
+Run `npm start` or you can use `https://thunder-flash-express.vercel.app`
 
 ## Endpoints
 
