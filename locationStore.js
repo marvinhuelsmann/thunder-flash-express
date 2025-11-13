@@ -2,6 +2,8 @@ const { randomUUID } = require('crypto');
 
 let locations = [];
 
+//TODO: add database integration
+
 function addLocation(location) {
     const newLocation = {
         id: randomUUID(),

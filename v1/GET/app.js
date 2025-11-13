@@ -8,7 +8,7 @@ router.get('/v1/location', (req, res) => {
 });
 
 router.get('/v1/location/:id', (req, res) => {
-    const id = Number(req.params.id);
+    const id = req.params.id;
     const location = getLocationById(id);
 
     if (!location) {
