@@ -2,10 +2,14 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello Express!');
-});
+const getLocationRouter = require('./v1/GET/app');
+const postLocationRouter = require('./v1/POST/app');
+
+app.use(express.json());
+
+app.use(getLocationRouter);
+app.use(postLocationRouter);
 
 app.listen(PORT, () => {
-    console.log(`server is running on http://localhost:${PORT}`);
+    console.log(`thunderflash is running on http://localhost:${PORT}`);
 });
