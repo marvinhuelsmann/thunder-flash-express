@@ -9,7 +9,8 @@ function addLocation(location) {
         image: location.image,
         latitude: location.latitude,
         longitude: location.longitude,
-        timestamp: new Date().toISOString()
+        captureTimestamp: location.captureTimestamp,
+        createdTimestamp: new Date().toTimeString()
     };
     locations.push(newLocation);
     return newLocation;
